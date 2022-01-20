@@ -10,22 +10,43 @@ import "./index.css";
 
 //}
 
+//function Task(){
+//	return(
+//			<li className="tasks-item">Follow Edukasyon.ph on Facebook </li>
+//		);
+//}
+
+function Task(props){
+	console.log(props);
+	return(
+			<li className="tasks-item">{props.taskName}</li>
+		);
+}
+
+
+
+
 function TaskList(){
 	return(
 			<ul>
-					<li className="tasks-item">Follow Edukasyon.ph on Facebook </li>
-					<li className="tasks-item">Follow AWS Siklab Pilipinas on Facebook </li>
-					<li className="tasks-item">Follow Zuitt Bootcamp on Facebook </li>
-				</ul>
-		)
+					<Task />
+					<Task taskName="Follow Edukasyon.ph on Facebook" />
+					<Task taskName="Follow Edukasyon.ph on Facebook" /> 
+			</ul>
+		);
 }
+
+
+
 
 function App(){
 
 	const paraStyle ={
-			"marginBottom": "20px" //no semicolon, using javascript object to represent css & it will be cammelCase
-			//most of the time, anything in between in curly braces is object
-	};
+			"marginBottom": "20px" 
+
+			
+	}; 
+	//most of the time, anything in between in curly braces is object. no semicolon, using javascript object to represent css & it will be cammelCase
 
 	return (
 		<div className="app">
