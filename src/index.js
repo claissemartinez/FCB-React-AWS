@@ -11,11 +11,23 @@ import "./index.css";
 //}
 
 function App(){
+
+	const paraStyle ={
+			"marginBottom": "20px"
+	};
+
 	return (
 		<div className="app">
 			<header className="app-header">
 				<h1>My Amazing To-Do List App</h1>
-				<p> The most simple and amazing todo-list React app. </p>
+				<p style={paraStyle}> The most simple and amazing todo-list React app. </p>
+
+				<ul>
+					<li className="tasks-item">Follow Edukasyon.ph on Facebook </li>
+					<li className="tasks-item">Follow AWS Siklab Pilipinas on Facebook </li>
+					<li className="tasks-item">Follow Zuitt Bootcamp on Facebook </li>
+				</ul>
+
 			</header>
 		</div> //no longer HTML Mark up, this is JSX. Not reccommended to use pure bootstrap, use react-bootstrap.
 
