@@ -14,10 +14,10 @@ function App(){
 	return (
 		<div className="app">
 			<header className="app-header">
-			<h1>My Amazing To-Do List App</h1>
-			<p> The most simple and amazing todo-list React app. </p>
+				<h1>My Amazing To-Do List App</h1>
+				<p> The most simple and amazing todo-list React app. </p>
 			</header>
-			</div>
+		</div> //no longer HTML Mark up, this is JSX. Not reccommended to use pure bootstrap, use react-bootstrap.
 
 		);
 }
