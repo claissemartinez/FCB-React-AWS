@@ -13,14 +13,16 @@ import "./index.css";
 function App(){
 
 	const paraStyle ={
-			"marginBottom": "20px"
+			"marginBottom": "20px" //no semicolon, using javascript object to represent css & it will be cammelCase
+			//most of the time, anything in between in curly braces is object
 	};
 
 	return (
 		<div className="app">
 			<header className="app-header">
 				<h1>My Amazing To-Do List App</h1>
-				<p style={paraStyle}> The most simple and amazing todo-list React app. </p>
+				<p style={paraStyle}> The most simple and amazing To Do-list React app. </p> 
+
 
 				<ul>
 					<li className="tasks-item">Follow Edukasyon.ph on Facebook </li>
