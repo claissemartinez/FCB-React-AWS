@@ -10,6 +10,16 @@ import "./index.css";
 
 //}
 
+function TaskList(){
+	return(
+			<ul>
+					<li className="tasks-item">Follow Edukasyon.ph on Facebook </li>
+					<li className="tasks-item">Follow AWS Siklab Pilipinas on Facebook </li>
+					<li className="tasks-item">Follow Zuitt Bootcamp on Facebook </li>
+				</ul>
+		)
+}
+
 function App(){
 
 	const paraStyle ={
@@ -23,13 +33,7 @@ function App(){
 				<h1>My Amazing To-Do List App</h1>
 				<p style={paraStyle}> The most simple and amazing To Do-list React app. </p> 
 
-
-				<ul>
-					<li className="tasks-item">Follow Edukasyon.ph on Facebook </li>
-					<li className="tasks-item">Follow AWS Siklab Pilipinas on Facebook </li>
-					<li className="tasks-item">Follow Zuitt Bootcamp on Facebook </li>
-				</ul>
-
+				<TaskList />
 			</header>
 		</div> //no longer HTML Mark up, this is JSX. Not reccommended to use pure bootstrap, use react-bootstrap.
 
