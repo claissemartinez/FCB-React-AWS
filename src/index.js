@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import TaskList from "./components/TaskList";
 
 // My first component
 
@@ -15,41 +16,6 @@ import "./index.css";
 //			<li className="tasks-item">Follow Edukasyon.ph on Facebook </li>
 //		);
 //}
-
-function Task(props){
-	console.log(props);
-	return(
-			<li className="tasks-item">{props.taskName}</li>
-		);
-}
-
-
-
-
-function TaskList(){
-
-	const tasksItemsList = [
-		"Follow Edukasyon.ph on Facebook.",
-		"Follow AWS Siklab PH on Facebook.",
-		"Follow Zuitt Coding Bootcamp on Facebook.",
-		"Follow Claisse Martinez on Facebook."
-
-	]; //index
-
-
-	return(
-		<div>
-		<input className="task-input" />
-			<ul>
-					{tasksItemsList.map((task, index)=> {
-							console.log(task, index);
-							return <Task key={index} taskName={task} />
-						})}
-			</ul>
-			</div>
-		);
-}
-
 
 
 
