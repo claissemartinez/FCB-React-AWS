@@ -38,13 +38,15 @@ function TaskList(){
 
 
 	return(
+		<div>
+		<input className="task-input" />
 			<ul>
-
 					{tasksItemsList.map((task, index)=> {
 							console.log(task, index);
 							return <Task key={index} taskName={task} />
 						})}
 			</ul>
+			</div>
 		);
 }
 
